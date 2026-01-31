@@ -17,9 +17,10 @@ function AxiosFun() {
       <h1>function axios.get("") method 👉</h1>
 
       {user.map((u, index) => (
-        <div key={index}>
-          <h2>user numer {u.id} :</h2>
-          <Button onClick={()=>navigate("/details/"+u.id)}>view details</Button>
+        <div key={index} style={{display:"flex"}}>
+          <h2>user numer {u.id} : </h2>
+          <p style={{marginTop:"28px"}}>{u.name}</p>
+          <Button onClick={()=>navigate("/details/"+u.id)}>view more details</Button>
         </div>
       ))}
     </div>

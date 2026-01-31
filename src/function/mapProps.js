@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function MapProps(props) {                                    //?we have passed the list of products by props from App
+function MapProps(props) {
+  useEffect(() => {
+    console.log("we have passed the list of products by props from App");
+  }, []);
+
   return (
-    <div key={props.pro.id} style={{ display: "flex" }}> 
+    <div key={props.pro.id} style={{ display: "flex" }}>
       <p style={{ marginRight: "15px" }}>{props.pro.name}</p>
       <p style={{ marginRight: "15px" }}>{props.pro.desc}</p>
       <p style={{ marginRight: "15px" }}>{props.pro.price}</p>

@@ -32,6 +32,7 @@ export default class CountClass extends Component {
     return (
       <div>
         <h1>Hello To CountPageClass</h1>
+        <h3>dont forget to check the console(ctrl+shift+i) or (F12)</h3>
         <span style={{ display: "flex" }}>
           <p>you clicked this button: {this.state.count} times</p>
           <Button onClick={this.Add}>+</Button>
